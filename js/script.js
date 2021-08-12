@@ -2,6 +2,8 @@ const inputMoeda = document.getElementById('inputMoeda');
 const button = document.getElementById('btn');
 const resultadoCripto = document.getElementById('valorMoeda');
 const tipodaMoeda = document.getElementById('tipoDaMoeda');
+const fraseHeader = document.getElementById('fraseHeader');
+fraseHeader.innerHTML = `Este valor equivale a 1 da criptomoeda que você escolheu em reais:`
 resultadoCripto.innerHTML = '> O VALOR APARECERA AQUI <'
 button.addEventListener('click', handleClick)
 function handleClick() {
@@ -16,6 +18,7 @@ function moeda(tipo) {
   .then(r => r.json())
   .then(tipo => {
       let numero = parseFloat(tipo.ticker.buy).toFixed(3);
+      fraseHeader.innerHTML = `Este valor equivale a 1 ${inputMoeda.value} em reais:`
       resultadoCripto.innerHTML = 'R$ ' + numero.replace('.', ',')
     })
 }
