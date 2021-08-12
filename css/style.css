@@ -65,6 +65,17 @@ img {
   margin-bottom: 50px;
 }
 
+#inputMoeda {
+  padding: 5px;
+  background-color: #373737;
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+#inputMoeda:focus {
+  outline: none;
+}
+
 .header {
   text-align: center;
 }
@@ -97,6 +108,20 @@ img {
   color: red;
 }
 
+#valorMoeda.ativo {
+  animation: valor 2s forwards;
+}
+
+#btn {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: -4px;
+  border-radius: 0 5px 5px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 /* HEADER */
 
 #tickets {
@@ -124,4 +149,15 @@ img {
   background: #373737;
   padding: 15px 0;
   color: #fff;
+}
+
+.teste-img {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

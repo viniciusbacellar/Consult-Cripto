@@ -6,6 +6,8 @@ resultadoCripto.innerHTML = '> O VALOR APARECERA AQUI <'
 button.addEventListener('click', handleClick)
 function handleClick() {
   const tipo = inputMoeda.value;
+  resultadoCripto.classList.add('ativo')
+  setTimeout(function() {resultadoCripto.classList.remove('ativo')}, 1700)
   moeda(tipo);
 }
 
@@ -17,3 +19,5 @@ function moeda(tipo) {
       resultadoCripto.innerHTML = 'R$ ' + numero.replace('.', ',')
     })
 }
+
+

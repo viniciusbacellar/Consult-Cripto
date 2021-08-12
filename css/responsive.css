@@ -1,0 +1,62 @@
+@media (min-width: 1000px) {
+  .img-listas {
+    display: flex;
+  }
+  .img-listas img:nth-child(2) {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 751px) {
+  .img-listas img {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .teste-img {
+    display: none;
+  }
+  .conteudo-tickets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-listas {
+    display: flex;
+    margin: 0 auto;
+  }
+  .img-listas img:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  .img-listas {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-listas img:nth-child(2) {
+    margin-left: 0;
+  }
+  .img-listas img:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .img-listas img {
+    margin: 0 auto;
+  }
+}
+
+/* TICKETS */
+@media (max-width: 575px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 451px) {
+  #nav h1 {
+    font-size: 2em;
+  }
+}
