@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Nunito", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* estilos gerais */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* estilos gerais */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#nav {
+  background: #000;
+}
+
+#nav h1,
+#nav ul li a {
+  color: #fff;
+  padding: 5px;
+}
+
+#nav h1 {
+  font-size: 2.5em;
+}
+
+#nav ul {
+  display: flex;
+  font-size: 1.25em;
+}
+
+#nav ul li {
+  margin-left: 50px;
+}
+
+/* NAV MENU */
+
+#header {
+  background: linear-gradient(to right, #737373, #e9eb9d);
+  padding: 70px 0 100px 0;
+}
+
+#search {
+  margin-bottom: 50px;
+}
+
+.header {
+  text-align: center;
+}
+
+.conteudoHeader {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.conteudoHeader p,
+.conteudoHeader span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.conteudoHeader p {
+  margin-bottom: 20px;
+}
+
+.img-1 {
+  position: relative;
+}
+
+#obs {
+  font-size: 1em;
+  color: red;
+}
+
+/* HEADER */
+
+#tickets {
+  background: #000;
+  padding: 50px;
+  text-align: center;
+}
+
+#tickets h2 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.conteudo-tickets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TICKETS */
+
+#footer {
+  background: #373737;
+  padding: 15px 0;
+  color: #fff;
+}
